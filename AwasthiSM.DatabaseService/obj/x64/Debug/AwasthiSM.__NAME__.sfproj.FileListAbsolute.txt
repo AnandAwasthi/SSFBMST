@@ -1,2 +1,0 @@
-D:\TempFolder\AwasthiSM.ServiceTemplate\AwasthiSM.DatabaseService\bin\Debug\AwasthiSM.__NAME__.config
-D:\TempFolder\AwasthiSM.ServiceTemplate\AwasthiSM.DatabaseService\obj\x64\Debug\AwasthiSM.__NAME__.sfprojResolveAssemblyReference.cache

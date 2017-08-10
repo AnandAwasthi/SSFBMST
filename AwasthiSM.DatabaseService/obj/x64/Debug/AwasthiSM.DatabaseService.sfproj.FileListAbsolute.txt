@@ -1,7 +1,0 @@
-D:\TempFolder\AwasthiSM.DatabaseService\AwasthiSM.DatabaseService\obj\x64\Debug\AwasthiSM.DatabaseService.sfprojResolveAssemblyReference.cache
-D:\TempFolder\AwasthiSM.DatabaseService\V1.0.2\AwasthiSM.DatabaseService\bin\Debug\AwasthiSM.DatabaseService.config
-D:\TempFolder\AwasthiSM.DatabaseService\V1.0.2\AwasthiSM.DatabaseService\obj\x64\Debug\AwasthiSM.DatabaseService.sfprojResolveAssemblyReference.cache
-D:\TempFolder\AwasthiSM.DatabaseService\V1.0.4\AwasthiSM.DatabaseService\bin\Debug\AwasthiSM.DatabaseService.config
-D:\TempFolder\AwasthiSM.DatabaseService\V1.0.4\AwasthiSM.DatabaseService\obj\x64\Debug\AwasthiSM.DatabaseService.sfprojResolveAssemblyReference.cache
-D:\TempFolder\AwasthiSM.DatabaseService\V1.0.5\AwasthiSM.DatabaseService\bin\Debug\AwasthiSM.DatabaseService.config
-D:\TempFolder\AwasthiSM.DatabaseService\V1.0.5\AwasthiSM.DatabaseService\obj\x64\Debug\AwasthiSM.DatabaseService.sfprojResolveAssemblyReference.cache
