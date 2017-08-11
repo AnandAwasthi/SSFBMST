@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "AwasthiSM.__NAME__", "AwasthiSM.DatabaseService\AwasthiSM.__NAME__.sfproj", "{51DF2C58-2E0F-4CEA-80A0-7A19BAE5EA4B}"
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "AwasthiSM.__NAME__", "AwasthiSM.__NAME__\AwasthiSM.__NAME__.sfproj", "{51DF2C58-2E0F-4CEA-80A0-7A19BAE5EA4B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "__NAME__", "DatabaseService\__NAME__.csproj", "{E6C7EC56-BB98-439D-9920-890FF50FB35E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "__NAME__", "__NAME__\__NAME__.csproj", "{E6C7EC56-BB98-439D-9920-890FF50FB35E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{26B6C6EE-1E63-4991-8C9B-A92A19B55B94}"
 EndProject
