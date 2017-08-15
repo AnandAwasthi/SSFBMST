@@ -64,6 +64,10 @@
       <Project>{863f5dae-edbe-4c7f-addf-530bac5edaeb}</Project>
       <Name>AwasthiSM.Domain.Command</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AwasthiSM.Model\AwasthiSM.Model.csproj">
+      <Project>{520233da-f1fa-4cbc-b5bb-d1d8d0763045}</Project>
+      <Name>AwasthiSM.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

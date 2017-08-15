@@ -13,6 +13,7 @@ namespace AwasthiSM.ServiceBus
         public MassTransitBus(IBusControl busControl)
         {
             _busControl = busControl;
+            
         }
         IBusControl ITransitBus.GetBus => _busControl;
 
