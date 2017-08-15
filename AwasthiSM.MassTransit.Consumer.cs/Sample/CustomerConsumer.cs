@@ -1,16 +1,14 @@
 ﻿using AwasthiSM.CommandProcessor.Dispatcher;
 using AwasthiSM.Domain.Command;
+using AwasthiSM.Model.Sample;
 using MassTransit;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace AwasthiSM.MassTransit.Consumer
 {
     public class CustomerConsumer : 
-        IConsumer<CreateOrUpdateCustomerCommand>
+        IConsumer<CreateOrUpdateCustomerCommand>,
+        IConsumer<CustomerRequest>
     {
         private readonly ICommandBus _commandBus;
         public CustomerConsumer() { }
@@ -22,6 +20,16 @@ namespace AwasthiSM.MassTransit.Consumer
         public async Task Consume(ConsumeContext<CreateOrUpdateCustomerCommand> context)
         {
             await _commandBus.Submit(context.Message);
+        }
+
+        public async Task Consume(ConsumeContext<CustomerRequest> context)
+        {
+            await context.RespondAsync(new CustomerResponse
+            {
+                CustomerId = context.Message.Id,
+                CustomerName = context.Message.Name
+                
+            });
         }
     }
     
