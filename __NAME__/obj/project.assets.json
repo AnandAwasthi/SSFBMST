@@ -9418,8 +9418,8 @@
     },
     "AwasthiSM.MassTransit.Consumer/1.0.0": {
       "type": "project",
-      "path": "../AwasthiSM.MassTransit.Consumer.cs/AwasthiSM.MassTransit.Consumer.csproj",
-      "msbuildProject": "../AwasthiSM.MassTransit.Consumer.cs/AwasthiSM.MassTransit.Consumer.csproj"
+      "path": "../AwasthiSM.MassTransit.Consumer/AwasthiSM.MassTransit.Consumer.csproj",
+      "msbuildProject": "../AwasthiSM.MassTransit.Consumer/AwasthiSM.MassTransit.Consumer.csproj"
     },
     "AwasthiSM.Mongo.DatabaseFactory/1.0.0": {
       "type": "project",
@@ -9490,6 +9490,9 @@
             "D:\\Projects\\Git\\SSFBMST\\AwasthiSM.MassTransit.Client\\AwasthiSM.MassTransit.Client.csproj": {
               "projectPath": "D:\\Projects\\Git\\SSFBMST\\AwasthiSM.MassTransit.Client\\AwasthiSM.MassTransit.Client.csproj"
             },
+            "D:\\Projects\\Git\\SSFBMST\\AwasthiSM.MassTransit.Consumer\\AwasthiSM.MassTransit.Consumer.csproj": {
+              "projectPath": "D:\\Projects\\Git\\SSFBMST\\AwasthiSM.MassTransit.Consumer\\AwasthiSM.MassTransit.Consumer.csproj"
+            },
             "D:\\Projects\\Git\\SSFBMST\\AwasthiSM.Domain.Entities\\AwasthiSM.Domain.Entities.csproj": {
               "projectPath": "D:\\Projects\\Git\\SSFBMST\\AwasthiSM.Domain.Entities\\AwasthiSM.Domain.Entities.csproj"
             },
@@ -9498,9 +9501,6 @@
             },
             "D:\\Projects\\Git\\SSFBMST\\AwasthiSM.Mongo.DatabaseFactory\\AwasthiSM.Mongo.DatabaseFactory.csproj": {
               "projectPath": "D:\\Projects\\Git\\SSFBMST\\AwasthiSM.Mongo.DatabaseFactory\\AwasthiSM.Mongo.DatabaseFactory.csproj"
-            },
-            "D:\\Projects\\Git\\SSFBMST\\AwasthiSM.MassTransit.Consumer.cs\\AwasthiSM.MassTransit.Consumer.csproj": {
-              "projectPath": "D:\\Projects\\Git\\SSFBMST\\AwasthiSM.MassTransit.Consumer.cs\\AwasthiSM.MassTransit.Consumer.csproj"
             },
             "D:\\Projects\\Git\\SSFBMST\\AwasthiSM.Domain.Command\\AwasthiSM.Domain.Command.csproj": {
               "projectPath": "D:\\Projects\\Git\\SSFBMST\\AwasthiSM.Domain.Command\\AwasthiSM.Domain.Command.csproj"
