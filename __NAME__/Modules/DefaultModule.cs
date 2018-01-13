@@ -13,9 +13,6 @@ namespace __NAME__
     {
         protected override void Load(ContainerBuilder builder)
         {
-
-
-
             builder.RegisterType<DefaultCommandBus>().As<ICommandBus>().InstancePerLifetimeScope();
             builder.RegisterType<DbContext>().As<IDbContext>().InstancePerLifetimeScope();
             builder.RegisterType<MassTransitBus>().As<ITransitBus>().InstancePerLifetimeScope();

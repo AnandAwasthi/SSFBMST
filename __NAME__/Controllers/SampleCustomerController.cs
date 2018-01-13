@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using AwasthiSM.CommandProcessor.Dispatcher;
 using AwasthiSM.Domain.Query;
-using AwasthiSM.Model.Sample;
+
 using AwasthiSM.Domain.Command;
+using AwasthiSM.Domain.Entities.Sample;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 

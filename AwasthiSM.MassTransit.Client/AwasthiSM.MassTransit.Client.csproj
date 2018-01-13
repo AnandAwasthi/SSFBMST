@@ -57,13 +57,21 @@
     <Compile Include="Sample\CustomerClient.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AwasthiSM.Model\AwasthiSM.Model.csproj">
+    <ProjectReference Include="..\AwasthiSM.Domain.Entities\AwasthiSM.Domain.Entities.csproj">
       <Project>{520233da-f1fa-4cbc-b5bb-d1d8d0763045}</Project>
-      <Name>AwasthiSM.Model</Name>
+      <Name>AwasthiSM.Domain.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AwasthiSM.Domain.Service\AwasthiSM.Domain.Service.csproj">
+      <Project>{116609DA-A3AF-4ADE-B73F-11808CFA6224}</Project>
+      <Name>AwasthiSM.Domain.Service</Name>
     </ProjectReference>
     <ProjectReference Include="..\AwasthiSM.ServiceBus\AwasthiSM.ServiceBus.csproj">
       <Project>{6629e6f6-0fb1-45ce-9bdf-ebd1a82fb1e7}</Project>
       <Name>AwasthiSM.ServiceBus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AwasthiSM.Shared.Messages\AwasthiSM.Shared.Messages.csproj">
+      <Project>{8D61E997-E2E9-48F2-88B6-2456509A7706}</Project>
+      <Name>AwasthiSM.Shared.Messages</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

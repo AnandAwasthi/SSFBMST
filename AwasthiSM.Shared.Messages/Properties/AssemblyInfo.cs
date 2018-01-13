@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("AwasthiSM.Model")]
+[assembly: AssemblyTitle("AwasthiSM.Shared.Messages")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("AwasthiSM.Model")]
+[assembly: AssemblyProduct("AwasthiSM.Shared.Messages")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("520233da-f1fa-4cbc-b5bb-d1d8d0763045")]
+[assembly: Guid("8d61e997-e2e9-48f2-88b6-2456509a7706")]
 
 // Version information for an assembly consists of the following four values:
 //

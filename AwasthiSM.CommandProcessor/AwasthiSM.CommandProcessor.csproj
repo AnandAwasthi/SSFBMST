@@ -58,13 +58,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AwasthiSM.Core\AwasthiSM.Core.csproj">
-      <Project>{a8c4fe5a-398a-4a42-b7e4-a9294455f820}</Project>
-      <Name>AwasthiSM.Core</Name>
-    </ProjectReference>
+    <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <ProjectReference Include="..\AwasthiSM.Shared\AwasthiSM.Shared.csproj">
+      <Project>{a8c4fe5a-398a-4a42-b7e4-a9294455f820}</Project>
+      <Name>AwasthiSM.Shared</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

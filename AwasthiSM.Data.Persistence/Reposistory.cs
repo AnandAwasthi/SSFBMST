@@ -1,7 +1,9 @@
 ﻿using AwasthiSM.ServiceBus;
 using MongoDB.Driver;
 using System;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
+using System.Linq;
 namespace AwasthiSM.Data.Persistence
 {
     public static class Reposistory
@@ -14,7 +16,8 @@ namespace AwasthiSM.Data.Persistence
                 await mongoCollection.InsertOneAsync(command)
                     .ContinueWith(async (t) =>
                     {
-                        await transitBus.GetBus.Publish<T>(command);
+                        if (transitBus != null)
+                            await transitBus.Publish<T>(command);
                     });
                 flag = true;
             }
@@ -25,7 +28,27 @@ namespace AwasthiSM.Data.Persistence
             }
             return flag;
         }
+        public static async Task<bool> InsertOrReplaceOneAsync<T>(this IMongoCollection<T> mongoCollection, ITransitBus transitBus, T command, Expression<Func<T, bool>> predicate) where T : class
+        {
+            bool flag = false;
+            try
+            {
+                if ((mongoCollection.AsQueryable().Where(predicate).Any()))
+                    await mongoCollection.ReplaceOneAsync(predicate, command);
+                else
+                    await mongoCollection.InsertOneAsync(command);
 
+                if (transitBus != null)
+                    await transitBus.Publish<T>(command);
+                flag = true;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            return flag;
+        }
 
     }
 }

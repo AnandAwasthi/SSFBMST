@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace AwasthiSM.Core.Common
+﻿namespace AwasthiSM.Shared.Common
 {
     /// <summary>
     /// Describes the result of a validation of a potential change through a business service.

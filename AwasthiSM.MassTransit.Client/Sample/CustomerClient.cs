@@ -1,4 +1,5 @@
-﻿using AwasthiSM.Model.Sample;
+﻿
+﻿using AwasthiSM.Domain.Entities.Sample;
 using System;
 using MassTransit;
 using System.Threading.Tasks;

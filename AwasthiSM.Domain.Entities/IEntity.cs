@@ -1,6 +1,6 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 
-namespace AwasthiSM.Model
+namespace AwasthiSM.Domain.Entities
 {
     /// <summary>
     /// Generic Entity interface.

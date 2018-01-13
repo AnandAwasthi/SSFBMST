@@ -8,7 +8,7 @@ using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using System.Reflection;
 using MassTransit;
-using AwasthiSM.Core;
+using AwasthiSM.Shared;
 
 namespace __NAME__
 {

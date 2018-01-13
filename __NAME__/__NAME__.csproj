@@ -35,15 +35,16 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AwasthiSM.CommandProcessor\AwasthiSM.CommandProcessor.csproj" />
-    <ProjectReference Include="..\AwasthiSM.Core\AwasthiSM.Core.csproj" />
     <ProjectReference Include="..\AwasthiSM.Domain.Command\AwasthiSM.Domain.Command.csproj" />
+    <ProjectReference Include="..\AwasthiSM.Domain.Entities\AwasthiSM.Domain.Entities.csproj" />
     <ProjectReference Include="..\AwasthiSM.Domain.Handler\AwasthiSM.Domain.Handler.csproj" />
     <ProjectReference Include="..\AwasthiSM.Domain.Query\AwasthiSM.Domain.Query.csproj" />
     <ProjectReference Include="..\AwasthiSM.Domain.Service\AwasthiSM.Domain.Service.csproj" />
     <ProjectReference Include="..\AwasthiSM.MassTransit.Client\AwasthiSM.MassTransit.Client.csproj" />
-    <ProjectReference Include="..\AwasthiSM.MassTransit.Consumer.cs\AwasthiSM.MassTransit.Consumer.csproj" />
+    <ProjectReference Include="..\AwasthiSM.MassTransit.Consumer\AwasthiSM.MassTransit.Consumer.csproj" />
     <ProjectReference Include="..\AwasthiSM.Mongo.DatabaseFactory\AwasthiSM.Mongo.DatabaseFactory.csproj" />
     <ProjectReference Include="..\AwasthiSM.ServiceBus\AwasthiSM.ServiceBus.csproj" />
+    <ProjectReference Include="..\AwasthiSM.Shared\AwasthiSM.Shared.csproj" />
   </ItemGroup>
 
 </Project>

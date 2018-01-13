@@ -61,9 +61,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AwasthiSM.Model\AwasthiSM.Model.csproj">
+    <ProjectReference Include="..\AwasthiSM.Domain.Entities\AwasthiSM.Domain.Entities.csproj">
       <Project>{520233da-f1fa-4cbc-b5bb-d1d8d0763045}</Project>
-      <Name>AwasthiSM.Model</Name>
+      <Name>AwasthiSM.Domain.Entities</Name>
     </ProjectReference>
     <ProjectReference Include="..\AwasthiSM.Mongo.DatabaseFactory\AwasthiSM.Mongo.DatabaseFactory.csproj">
       <Project>{eee1f303-a819-4fe7-be5c-c41afb92856a}</Project>

@@ -1,4 +1,4 @@
-﻿using AwasthiSM.Model.Sample;
+﻿using AwasthiSM.Domain.Entities.Sample;
 using AwasthiSM.Mongo.DatabaseFactory;
 using MongoDB.Driver;
 using System;

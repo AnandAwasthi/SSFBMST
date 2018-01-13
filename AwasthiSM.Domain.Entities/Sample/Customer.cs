@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace AwasthiSM.Model.Sample
+namespace AwasthiSM.Domain.Entities.Sample
 {
     public class Customer : Entity
     {
