@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace AwasthiSM.ServiceBus
 {
+    using MassTransit;
     public interface ITransitBus
     {
       

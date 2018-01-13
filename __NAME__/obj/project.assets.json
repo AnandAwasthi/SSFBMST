@@ -2339,11 +2339,8 @@
       "AwasthiSM.CommandProcessor/1.0.0": {
         "type": "project",
         "dependencies": {
-          "AwasthiSM.Core": "1.0.0"
+          "AwasthiSM.Shared": "1.0.0"
         }
-      },
-      "AwasthiSM.Core/1.0.0": {
-        "type": "project"
       },
       "AwasthiSM.Data.Persistence/1.0.0": {
         "type": "project",
@@ -2357,8 +2354,12 @@
       "AwasthiSM.Domain.Command/1.0.0": {
         "type": "project",
         "dependencies": {
-          "AwasthiSM.CommandProcessor": "1.0.0"
+          "AwasthiSM.CommandProcessor": "1.0.0",
+          "AwasthiSM.Shared.Messages": "1.0.0"
         }
+      },
+      "AwasthiSM.Domain.Entities/1.0.0": {
+        "type": "project"
       },
       "AwasthiSM.Domain.Handler/1.0.0": {
         "type": "project",
@@ -2373,30 +2374,46 @@
       "AwasthiSM.Domain.Query/1.0.0": {
         "type": "project",
         "dependencies": {
-          "AwasthiSM.Model": "1.0.0",
+          "AwasthiSM.Domain.Entities": "1.0.0",
           "AwasthiSM.Mongo.DatabaseFactory": "1.0.0"
         }
       },
       "AwasthiSM.Domain.Service/1.0.0": {
         "type": "project",
         "dependencies": {
-          "AwasthiSM.CommandProcessor": "1.0.0"
+          "AwasthiSM.CommandProcessor": "1.0.0",
+          "AwasthiSM.Shared.Messages": "1.0.0"
+        }
+      },
+      "AwasthiSM.MassTransit.Client/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "AwasthiSM.Domain.Entities": "1.0.0",
+          "AwasthiSM.Domain.Service": "1.0.0",
+          "AwasthiSM.ServiceBus": "1.0.0",
+          "AwasthiSM.Shared.Messages": "1.0.0"
         }
       },
       "AwasthiSM.MassTransit.Consumer/1.0.0": {
         "type": "project",
         "dependencies": {
           "AwasthiSM.CommandProcessor": "1.0.0",
-          "AwasthiSM.Domain.Command": "1.0.0"
+          "AwasthiSM.Domain.Command": "1.0.0",
+          "AwasthiSM.Domain.Entities": "1.0.0",
+          "AwasthiSM.Domain.Service": "1.0.0",
+          "AwasthiSM.Shared.Messages": "1.0.0"
         }
-      },
-      "AwasthiSM.Model/1.0.0": {
-        "type": "project"
       },
       "AwasthiSM.Mongo.DatabaseFactory/1.0.0": {
         "type": "project"
       },
       "AwasthiSM.ServiceBus/1.0.0": {
+        "type": "project"
+      },
+      "AwasthiSM.Shared/1.0.0": {
+        "type": "project"
+      },
+      "AwasthiSM.Shared.Messages/1.0.0": {
         "type": "project"
       }
     },
@@ -4639,11 +4656,8 @@
       "AwasthiSM.CommandProcessor/1.0.0": {
         "type": "project",
         "dependencies": {
-          "AwasthiSM.Core": "1.0.0"
+          "AwasthiSM.Shared": "1.0.0"
         }
-      },
-      "AwasthiSM.Core/1.0.0": {
-        "type": "project"
       },
       "AwasthiSM.Data.Persistence/1.0.0": {
         "type": "project",
@@ -4657,8 +4671,12 @@
       "AwasthiSM.Domain.Command/1.0.0": {
         "type": "project",
         "dependencies": {
-          "AwasthiSM.CommandProcessor": "1.0.0"
+          "AwasthiSM.CommandProcessor": "1.0.0",
+          "AwasthiSM.Shared.Messages": "1.0.0"
         }
+      },
+      "AwasthiSM.Domain.Entities/1.0.0": {
+        "type": "project"
       },
       "AwasthiSM.Domain.Handler/1.0.0": {
         "type": "project",
@@ -4673,30 +4691,46 @@
       "AwasthiSM.Domain.Query/1.0.0": {
         "type": "project",
         "dependencies": {
-          "AwasthiSM.Model": "1.0.0",
+          "AwasthiSM.Domain.Entities": "1.0.0",
           "AwasthiSM.Mongo.DatabaseFactory": "1.0.0"
         }
       },
       "AwasthiSM.Domain.Service/1.0.0": {
         "type": "project",
         "dependencies": {
-          "AwasthiSM.CommandProcessor": "1.0.0"
+          "AwasthiSM.CommandProcessor": "1.0.0",
+          "AwasthiSM.Shared.Messages": "1.0.0"
+        }
+      },
+      "AwasthiSM.MassTransit.Client/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "AwasthiSM.Domain.Entities": "1.0.0",
+          "AwasthiSM.Domain.Service": "1.0.0",
+          "AwasthiSM.ServiceBus": "1.0.0",
+          "AwasthiSM.Shared.Messages": "1.0.0"
         }
       },
       "AwasthiSM.MassTransit.Consumer/1.0.0": {
         "type": "project",
         "dependencies": {
           "AwasthiSM.CommandProcessor": "1.0.0",
-          "AwasthiSM.Domain.Command": "1.0.0"
+          "AwasthiSM.Domain.Command": "1.0.0",
+          "AwasthiSM.Domain.Entities": "1.0.0",
+          "AwasthiSM.Domain.Service": "1.0.0",
+          "AwasthiSM.Shared.Messages": "1.0.0"
         }
-      },
-      "AwasthiSM.Model/1.0.0": {
-        "type": "project"
       },
       "AwasthiSM.Mongo.DatabaseFactory/1.0.0": {
         "type": "project"
       },
       "AwasthiSM.ServiceBus/1.0.0": {
+        "type": "project"
+      },
+      "AwasthiSM.Shared/1.0.0": {
+        "type": "project"
+      },
+      "AwasthiSM.Shared.Messages/1.0.0": {
         "type": "project"
       }
     }
@@ -9347,11 +9381,6 @@
       "path": "../AwasthiSM.CommandProcessor/AwasthiSM.CommandProcessor.csproj",
       "msbuildProject": "../AwasthiSM.CommandProcessor/AwasthiSM.CommandProcessor.csproj"
     },
-    "AwasthiSM.Core/1.0.0": {
-      "type": "project",
-      "path": "../AwasthiSM.Core/AwasthiSM.Core.csproj",
-      "msbuildProject": "../AwasthiSM.Core/AwasthiSM.Core.csproj"
-    },
     "AwasthiSM.Data.Persistence/1.0.0": {
       "type": "project",
       "path": "../AwasthiSM.Data.Persistence/AwasthiSM.Data.Persistence.csproj",
@@ -9361,6 +9390,11 @@
       "type": "project",
       "path": "../AwasthiSM.Domain.Command/AwasthiSM.Domain.Command.csproj",
       "msbuildProject": "../AwasthiSM.Domain.Command/AwasthiSM.Domain.Command.csproj"
+    },
+    "AwasthiSM.Domain.Entities/1.0.0": {
+      "type": "project",
+      "path": "../AwasthiSM.Domain.Entities/AwasthiSM.Domain.Entities.csproj",
+      "msbuildProject": "../AwasthiSM.Domain.Entities/AwasthiSM.Domain.Entities.csproj"
     },
     "AwasthiSM.Domain.Handler/1.0.0": {
       "type": "project",
@@ -9377,15 +9411,15 @@
       "path": "../AwasthiSM.Domain.Service/AwasthiSM.Domain.Service.csproj",
       "msbuildProject": "../AwasthiSM.Domain.Service/AwasthiSM.Domain.Service.csproj"
     },
+    "AwasthiSM.MassTransit.Client/1.0.0": {
+      "type": "project",
+      "path": "../AwasthiSM.MassTransit.Client/AwasthiSM.MassTransit.Client.csproj",
+      "msbuildProject": "../AwasthiSM.MassTransit.Client/AwasthiSM.MassTransit.Client.csproj"
+    },
     "AwasthiSM.MassTransit.Consumer/1.0.0": {
       "type": "project",
       "path": "../AwasthiSM.MassTransit.Consumer.cs/AwasthiSM.MassTransit.Consumer.csproj",
       "msbuildProject": "../AwasthiSM.MassTransit.Consumer.cs/AwasthiSM.MassTransit.Consumer.csproj"
-    },
-    "AwasthiSM.Model/1.0.0": {
-      "type": "project",
-      "path": "../AwasthiSM.Model/AwasthiSM.Model.csproj",
-      "msbuildProject": "../AwasthiSM.Model/AwasthiSM.Model.csproj"
     },
     "AwasthiSM.Mongo.DatabaseFactory/1.0.0": {
       "type": "project",
@@ -9396,6 +9430,16 @@
       "type": "project",
       "path": "../AwasthiSM.ServiceBus/AwasthiSM.ServiceBus.csproj",
       "msbuildProject": "../AwasthiSM.ServiceBus/AwasthiSM.ServiceBus.csproj"
+    },
+    "AwasthiSM.Shared/1.0.0": {
+      "type": "project",
+      "path": "../AwasthiSM.Shared/AwasthiSM.Shared.csproj",
+      "msbuildProject": "../AwasthiSM.Shared/AwasthiSM.Shared.csproj"
+    },
+    "AwasthiSM.Shared.Messages/1.0.0": {
+      "type": "project",
+      "path": "../AwasthiSM.Shared.Messages/AwasthiSM.Shared.Messages.csproj",
+      "msbuildProject": "../AwasthiSM.Shared.Messages/AwasthiSM.Shared.Messages.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -9403,14 +9447,16 @@
       "Autofac >= 4.6.0",
       "Autofac.Extensions.DependencyInjection >= 4.1.0",
       "AwasthiSM.CommandProcessor >= 1.0.0",
-      "AwasthiSM.Core >= 1.0.0",
       "AwasthiSM.Domain.Command >= 1.0.0",
+      "AwasthiSM.Domain.Entities >= 1.0.0",
       "AwasthiSM.Domain.Handler >= 1.0.0",
       "AwasthiSM.Domain.Query >= 1.0.0",
       "AwasthiSM.Domain.Service >= 1.0.0",
+      "AwasthiSM.MassTransit.Client >= 1.0.0",
       "AwasthiSM.MassTransit.Consumer >= 1.0.0",
       "AwasthiSM.Mongo.DatabaseFactory >= 1.0.0",
       "AwasthiSM.ServiceBus >= 1.0.0",
+      "AwasthiSM.Shared >= 1.0.0",
       "MassTransit >= 3.5.7",
       "MassTransit.Autofac >= 3.5.7",
       "MassTransit.RabbitMQ >= 3.5.7",
@@ -9441,8 +9487,11 @@
       "frameworks": {
         "net461": {
           "projectReferences": {
-            "D:\\Projects\\Git\\SSFBMST\\AwasthiSM.Core\\AwasthiSM.Core.csproj": {
-              "projectPath": "D:\\Projects\\Git\\SSFBMST\\AwasthiSM.Core\\AwasthiSM.Core.csproj"
+            "D:\\Projects\\Git\\SSFBMST\\AwasthiSM.MassTransit.Client\\AwasthiSM.MassTransit.Client.csproj": {
+              "projectPath": "D:\\Projects\\Git\\SSFBMST\\AwasthiSM.MassTransit.Client\\AwasthiSM.MassTransit.Client.csproj"
+            },
+            "D:\\Projects\\Git\\SSFBMST\\AwasthiSM.Domain.Entities\\AwasthiSM.Domain.Entities.csproj": {
+              "projectPath": "D:\\Projects\\Git\\SSFBMST\\AwasthiSM.Domain.Entities\\AwasthiSM.Domain.Entities.csproj"
             },
             "D:\\Projects\\Git\\SSFBMST\\AwasthiSM.ServiceBus\\AwasthiSM.ServiceBus.csproj": {
               "projectPath": "D:\\Projects\\Git\\SSFBMST\\AwasthiSM.ServiceBus\\AwasthiSM.ServiceBus.csproj"
@@ -9464,6 +9513,9 @@
             },
             "D:\\Projects\\Git\\SSFBMST\\AwasthiSM.Domain.Handler\\AwasthiSM.Domain.Handler.csproj": {
               "projectPath": "D:\\Projects\\Git\\SSFBMST\\AwasthiSM.Domain.Handler\\AwasthiSM.Domain.Handler.csproj"
+            },
+            "D:\\Projects\\Git\\SSFBMST\\AwasthiSM.Shared\\AwasthiSM.Shared.csproj": {
+              "projectPath": "D:\\Projects\\Git\\SSFBMST\\AwasthiSM.Shared\\AwasthiSM.Shared.csproj"
             },
             "D:\\Projects\\Git\\SSFBMST\\AwasthiSM.CommandProcessor\\AwasthiSM.CommandProcessor.csproj": {
               "projectPath": "D:\\Projects\\Git\\SSFBMST\\AwasthiSM.CommandProcessor\\AwasthiSM.CommandProcessor.csproj"

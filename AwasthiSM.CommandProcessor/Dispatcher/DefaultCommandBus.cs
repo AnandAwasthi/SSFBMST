@@ -1,9 +1,9 @@
 ﻿
 using System.Collections.Generic;
 using AwasthiSM.CommandProcessor.Command;
-using AwasthiSM.Core.Common;
 using System.Threading.Tasks;
-using AwasthiSM.Core;
+using AwasthiSM.Shared.Common;
+using AwasthiSM.Shared;
 
 namespace AwasthiSM.CommandProcessor.Dispatcher
 {

@@ -1,5 +1,5 @@
 ﻿using AwasthiSM.CommandProcessor.Command;
-using AwasthiSM.Core.Common;
+using AwasthiSM.Shared.Common;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

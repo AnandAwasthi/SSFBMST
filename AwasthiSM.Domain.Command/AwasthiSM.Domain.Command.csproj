@@ -50,9 +50,14 @@
       <Project>{955fd94a-bbc1-4469-889a-740fb98338de}</Project>
       <Name>AwasthiSM.CommandProcessor</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AwasthiSM.Shared.Messages\AwasthiSM.Shared.Messages.csproj">
+      <Project>{8D61E997-E2E9-48F2-88B6-2456509A7706}</Project>
+      <Name>AwasthiSM.Shared.Messages</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -32,18 +32,25 @@ namespace __NAME__.Modules
 
             builder.Register(context =>
                  Bus.Factory.CreateUsingRabbitMq(cfg =>
-                  {
-                      var host = cfg.Host(new Uri(_busConfiguration.HostAddress), _busConfiguration.VirtualHost, h =>
-                      {
+                 {
+                     var host = cfg.Host(new Uri(_busConfiguration.HostAddress), _busConfiguration.VirtualHost, h =>
+                     {
 
-                          h.Username(_busConfiguration.Username);
-                          h.Password(_busConfiguration.Password);
-                      });
-                      cfg.ReceiveEndpoint(host, ec =>
-                      {
+                         h.Username(_busConfiguration.Username);
+                         h.Password(_busConfiguration.Password);
+                     });
+
+                     cfg.ReceiveEndpoint(host, ThisAssembly.GetName().Name, e =>
+                     {
+                         //Add MassTransit Consumer 
+                     });
+
+                     cfg.ReceiveEndpoint(host, ec =>
+                     {
                          ec.LoadFrom(context.Resolve<ILifetimeScope>());
-                      });
-                  })
+                     });
+
+                 })
             ).SingleInstance()
             .As<IBusControl>()
             .As<IBus>();
