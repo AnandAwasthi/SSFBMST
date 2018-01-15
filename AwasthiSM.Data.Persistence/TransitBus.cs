@@ -7,7 +7,7 @@ namespace AwasthiSM.Data.Persistence
     {
         public static async Task Publish<T>(this ITransitBus transitBus, T command) where T : class
         {
-            await transitBus.GetBus.Publish<T>(command);
+            await transitBus.GetBus.Publish<T>(command).ConfigureAwait(false);
         }
     }
 }
