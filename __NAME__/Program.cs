@@ -51,6 +51,10 @@ namespace __NAME__
 
             Task ICommunicationListener.CloseAsync(CancellationToken cancellationToken)
             {
+                if (cancellationToken.IsCancellationRequested)
+                {
+                    return null;
+                }
                 _webHost?.Dispose();
 
                 return Task.FromResult(true);
@@ -58,6 +62,10 @@ namespace __NAME__
 
             Task<string> ICommunicationListener.OpenAsync(CancellationToken cancellationToken)
             {
+                if (cancellationToken.IsCancellationRequested)
+                {
+                    return null;
+                }
                 var endpoint = FabricRuntime.GetActivationContext().GetEndpoint(_endpointName);
 
                 string serverUrl = $"{endpoint.Protocol}://{FabricRuntime.GetNodeContext().IPAddressOrFQDN}:{endpoint.Port}";

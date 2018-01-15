@@ -9,8 +9,8 @@ namespace AwasthiSM.Domain.Handler.Sample
 {
     public class CreateOrUpdateApplicationRegistryHandler : ICommandHandler<CreateOrUpdateCustomerCommand>
     {
-        private IDbContext _dbContext;
-        private ITransitBus _transitBus;
+        private readonly IDbContext _dbContext;
+        private readonly ITransitBus _transitBus;
         public CreateOrUpdateApplicationRegistryHandler(IDbContext dbContext, ITransitBus transitBus)
         {
             _dbContext = dbContext;
