@@ -8,12 +8,12 @@ namespace AwasthiSM.External.Service
     {
         public static class CustomHeaderNames
         {
-            public const string Authentication = "Authentication";
+            public static readonly string Authentication = "Authentication";
             public static readonly string Forwarded = "Forwarded";
 
-            public const string XForwardedFor = "X-Forwarded-For";
-            public const string XForwardedHost = "X-Forwarded-Host";
-            public const string XForwardedProto = "X-Forwarded-Proto";
+            public static readonly string XForwardedFor = "X-Forwarded-For";
+            public static readonly string XForwardedHost = "X-Forwarded-Host";
+            public static readonly string XForwardedProto = "X-Forwarded-Proto";
 
             public static readonly string XForwardedPathBase = "X-Forwarded-PathBase";
         }
@@ -32,7 +32,6 @@ namespace AwasthiSM.External.Service
             // However there are also recommendations against this:
             // https://docs.oracle.com/cd/E40519_01/studio.310/studio_install/src/cidi_studio_reverse_proxy_preserve_host_headers.html
             "Host",
-
             "If-Modified-Since",
             "Range",
             "Transfer-Encoding",

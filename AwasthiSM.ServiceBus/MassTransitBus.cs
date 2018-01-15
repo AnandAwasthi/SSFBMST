@@ -7,7 +7,7 @@ namespace AwasthiSM.ServiceBus
     public class MassTransitBus : ITransitBus
     {
 
-        private IBusControl _busControl;
+        private readonly IBusControl _busControl;
         
         public MassTransitBus(IBusControl busControl)
         {

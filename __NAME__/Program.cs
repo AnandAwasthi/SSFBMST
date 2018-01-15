@@ -15,7 +15,7 @@ namespace __NAME__
         public static void Main(string[] args)
         {
             ServiceRuntime.RegisterServiceAsync("__NAME__Type", context => new WebHostingService(context, "ServiceEndpoint")).GetAwaiter().GetResult();
-            //Register.Service("__NAME__Type", "ServiceEndpoint");
+            
             Thread.Sleep(Timeout.Infinite);
         }
         /// <summary>
