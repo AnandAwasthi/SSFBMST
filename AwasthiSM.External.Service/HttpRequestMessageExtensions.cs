@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AwasthiSM.External.Service
 {
@@ -12,13 +9,13 @@ namespace AwasthiSM.External.Service
         public static class CustomHeaderNames
         {
             public const string Authentication = "Authentication";
-            public const string Forwarded = "Forwarded";
+            public static readonly string Forwarded = "Forwarded";
 
             public const string XForwardedFor = "X-Forwarded-For";
             public const string XForwardedHost = "X-Forwarded-Host";
             public const string XForwardedProto = "X-Forwarded-Proto";
 
-            public const string XForwardedPathBase = "X-Forwarded-PathBase";
+            public static readonly string XForwardedPathBase = "X-Forwarded-PathBase";
         }
 
         /// <summary>
@@ -46,9 +43,13 @@ namespace AwasthiSM.External.Service
         public static void AddHeaders(this HttpRequestMessage target, IDictionary<string,List<string>> headers)
         {
             if (target == null)
+            {
                 throw new ArgumentNullException(nameof(target));
+            }
             if (headers == null)
+            {
                 throw new ArgumentNullException(nameof(headers));
+            }
 
             foreach(var header in headers)
             {
@@ -75,7 +76,8 @@ namespace AwasthiSM.External.Service
                 case "DELETE":
                     method = new HttpMethod("Delete");
                     break;
-
+                default:
+                    throw new InvalidOperationException($"Invalid Operation {verb}");
             }
             return method;
         }

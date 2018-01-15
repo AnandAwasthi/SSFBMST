@@ -17,7 +17,9 @@ namespace AwasthiSM.Data.Persistence
                     .ContinueWith(async (t) =>
                     {
                         if (transitBus != null)
+                        {
                             await transitBus.Publish<T>(command);
+                        }
                     });
                 flag = true;
             }
@@ -34,12 +36,17 @@ namespace AwasthiSM.Data.Persistence
             try
             {
                 if ((mongoCollection.AsQueryable().Where(predicate).Any()))
+                {
                     await mongoCollection.ReplaceOneAsync(predicate, command);
+                }
                 else
+                {
                     await mongoCollection.InsertOneAsync(command);
-
+                }
                 if (transitBus != null)
+                {
                     await transitBus.Publish<T>(command);
+                }
                 flag = true;
             }
             catch (Exception)

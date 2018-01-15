@@ -2,6 +2,6 @@
 {
     public static class CollectionNames
     {
-        public const string UserProfile = "UserProfile";
+        public static readonly string UserProfile = "UserProfile";
     }
 }

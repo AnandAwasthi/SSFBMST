@@ -9,7 +9,7 @@ namespace AwasthiSM.Domain.Query.ApiManagment
     public class CustomerQuery : IQuery
 
     {
-        private IDbContext _dbContext;
+        private readonly IDbContext _dbContext;
         public CustomerQuery(IDbContext dbContext)
         {
             _dbContext = dbContext;
